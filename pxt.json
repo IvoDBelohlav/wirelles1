@@ -5,8 +5,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "wireless-pxt": "github:ivodbelohlav/wireless-pxt#ca500b828dc00742aff101298c877cf704c1e12d",
-        "pxt-magicbit-pca9685": "github:tomaskazda/pxt-magicbit-pca9685#31053e8d1380ca67c69e729c607b8c68fd4357a5"
+        "pxt-magicbit-pca9685": "github:tomaskazda/pxt-magicbit-pca9685#31053e8d1380ca67c69e729c607b8c68fd4357a5",
+        "wireless-pxt": "github:IvoDBelohlav/wireless-pxt#ca500b828dc00742aff101298c877cf704c1e12d"
     },
     "files": [
         "main.blocks",

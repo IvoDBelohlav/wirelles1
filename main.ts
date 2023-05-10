@@ -1,4 +1,3 @@
-
 const MAX_ACCELERATION = 1000;
 
 function calculateMotorSpeeds(xAcceleration: number, yAcceleration: number): [number, number] {
@@ -29,7 +28,6 @@ basic.forever(function () {
     basic.pause(1);
 });
 
-
 radio.onReceivedNumber(function (receivedNumber: number) {
     let leftMotorSpeed = Math.floor(receivedNumber / 1000);
     let rightMotorSpeed = receivedNumber % 1000;
@@ -40,3 +38,14 @@ radio.onReceivedNumber(function (receivedNumber: number) {
 input.onButtonPressed(Button.AB, function () {
     PCAmotor.MotorStopAll();
 });
+
+radio.onReceivedNumber(function (receivedNumber: number) {
+    let L = Math.floor(receivedNumber / 1000)
+    let R = receivedNumber % 1000
+    PCAmotor.MotorRun(PCAmotor.Motors.M1, L)
+    PCAmotor.MotorRun(PCAmotor.Motors.M4, R)
+})
+
+input.onButtonPressed(Button.AB, function () {
+    PCAmotor.MotorStopAll()
+})
